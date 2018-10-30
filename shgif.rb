@@ -6,6 +6,7 @@ class Shgif < Formula
   sha256 "93dd25abb2a3294295e6a3e8c6cd6772dfe45f32604b2603b3a2992d81ea27c2"
 
   def install
+    system 'vim', '+\'%s#\$( cd "\${BASH_SOURCE\[0\]%\/\*}" && pwd )#' + prefix + '#g', '+w!', '+q', 'shgif.sh'
     system "mv", "shgif.sh", "shgif"
     bin.install "shgif"
     prefix.install Dir["lib"], Dir["deps"], Dir["tests"]
