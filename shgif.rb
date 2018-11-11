@@ -1,9 +1,9 @@
 class Shgif < Formula
   desc "a Shell GIF animation viewer"
   homepage "https://github.com/Cj-bc/shgif.git"
-  version "1.2.0"
+  version "1.3.0"
   url "https://github.com/Cj-bc/shgif/archive/v#{version}.tar.gz"
-  sha256 "93dd25abb2a3294295e6a3e8c6cd6772dfe45f32604b2603b3a2992d81ea27c2"
+  sha256 "b14a6bbf08aedc037cd16afe0e588a9076407c3ccfd38bff4d07f92fbf536e3d"
 
   def install
     system 'vim +\'%s#\$( cd "\${BASH_SOURCE\[0\]%\/\*}" && pwd )#' + prefix + '#g\' +w! +q shgif.sh'
