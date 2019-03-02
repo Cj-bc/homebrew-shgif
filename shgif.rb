@@ -5,7 +5,7 @@ class Shgif < Formula
   url "https://github.com/Cj-bc/shgif/archive/v#{version}.tar.gz"
   sha256 "8a9026835c2c0d18fe490fba65c4f1d27e75e954d259f901957df88a404c15b9"
 
-  depends_on "Cj-bc/blib"
+  depends_on "cj-bc/blib/blib"
 
   def install
     system "mv", "shgif.sh", "shgif"
