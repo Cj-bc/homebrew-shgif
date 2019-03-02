@@ -18,6 +18,7 @@ class Shgif < Formula
       `blib install Cj-bc/libtar`
       `blib install Cj-bc/libfile`
   EOS
+  end
 
   test do
     system "bats", "#{prefix}/tests/*"
