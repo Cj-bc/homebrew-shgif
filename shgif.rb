@@ -11,10 +11,13 @@ class Shgif < Formula
     system "mv", "shgif.sh", "shgif"
     bin.install "shgif"
     prefix.install Dir["lib"], Dir["tests"]
-
-    system "blib", "install", "'Cj-bc/libtar'"
-    system "blib", "install", "'Cj-bc/libfile'"
   end
+
+  def caveats; <<~EOS
+    Please install dependencies by:
+      `blib install Cj-bc/libtar`
+      `blib install Cj-bc/libfile`
+  EOS
 
   test do
     system "bats", "#{prefix}/tests/*"
