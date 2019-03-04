@@ -1,9 +1,9 @@
 class Shgif < Formula
   desc "a Shell GIF animation viewer"
   homepage "https://github.com/Cj-bc/shgif.git"
-  version "1.5.2"
+  version "1.5.3"
   url "https://github.com/Cj-bc/shgif/archive/v#{version}.tar.gz"
-  sha256 "892cf4d4e654768c797b270e85058f2dcd9b4bb4bd392108de104ad248dd0305"
+  sha256 "c921a3297941566e86219d41654621b9be4f91bd9b95db0fb1eb27bf4230f65c"
 
   depends_on "cj-bc/blib/blib"
 
